@@ -1,0 +1,5 @@
+singleuser:
+  image:
+    name: jupyter/scipy-notebook
+    tag: 92fe05d1e7e5
+
