@@ -1,3 +1,10 @@
+proxy:
+  https:
+    hosts:
+      - jday-orsay.jovyan.org
+    letsencrypt:
+      contactEmail: benjaminrk@gmail.com
+
 singleuser:
   image:
     name: jupyter/scipy-notebook
