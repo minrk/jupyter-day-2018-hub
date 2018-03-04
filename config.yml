@@ -5,6 +5,15 @@ proxy:
     letsencrypt:
       contactEmail: benjaminrk@gmail.com
 
+auth:
+  type: github
+  github:
+    callbackUrl: "https://jday-orsay.jovyan.org/hub/oauth_callback"
+  admin:
+    users:
+      - choldgraf
+      - minrk
+
 singleuser:
   image:
     name: jupyter/scipy-notebook
