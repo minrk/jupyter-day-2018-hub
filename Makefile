@@ -1,5 +1,3 @@
-.PHONY: upgrade
-
 upgrade:
 	helm upgrade --install jupyterhub \
 	    jupyterhub/jupyterhub \
@@ -7,3 +5,8 @@ upgrade:
 	    --namespace=default \
 	    -f config.yml \
 	    -f secret.yml
+
+dind:
+	kubectl apply -f dind.yml
+
+.PHONY: dind upgrade
