@@ -9,4 +9,10 @@ upgrade:
 dind:
 	kubectl apply -f dind.yml
 
-.PHONY: dind upgrade
+docker:
+	docker build -t minrk/jupyter-day-2018 docker
+
+docker-push:
+	docker push minrk/jupyter-day-2018
+
+.PHONY: upgrade dind docker docker-push

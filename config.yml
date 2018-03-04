@@ -16,10 +16,9 @@ auth:
 
 singleuser:
   fsGid: 0
-
   image:
-    name: jupyter/scipy-notebook
-    tag: 92fe05d1e7e5
+    name: minrk/jupyter-day-2018
+    tag: latest
   extraEnv:
     DOCKER_HOST: unix:///var/run/dind/docker.sock
   storage:
