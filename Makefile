@@ -1,5 +1,5 @@
 upgrade:
-	helm upgrade --install jupyterhub \
+	helm upgrade jupyterhub \
 	    jupyterhub/jupyterhub \
 	    --version=v0.6 \
 	    --namespace=default \
