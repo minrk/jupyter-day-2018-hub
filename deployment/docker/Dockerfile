@@ -9,4 +9,4 @@ USER 1000
 
 # pin some packages to avoid unnecessary upgrades
 RUN conda install -y openblas=0.2.19 numpy=1.12.1 numexpr pandas=0.19.2 geopandas=0.3.0 && conda clean -tipsy
-RUN pip install --no-cache-dir download
+RUN pip install --no-cache-dir download nbgitpuller
