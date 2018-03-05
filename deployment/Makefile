@@ -15,4 +15,11 @@ docker:
 docker-push:
 	docker push minrk/jupyter-day-2018
 
-.PHONY: upgrade dind docker docker-push
+docker-pull:
+	sh -c '\
+		for inst in $$(gcloud compute instances list | grep jupyterday | awk "{print \$$1}"); do \
+			echo $$inst; \
+			gcloud compute ssh $$inst --zone=europe-west1-b -- docker pull minrk/jupyter-day-2018; \
+	    done'
+
+.PHONY: upgrade dind docker docker-push docker-pull
