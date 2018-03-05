@@ -15,6 +15,11 @@ auth:
       - minrk
 
 singleuser:
+  cpu:
+    limit: 2
+  memory:
+    limit: 2G
+    guarantee: 1G
   fsGid: 0
   image:
     name: minrk/jupyter-day-2018
