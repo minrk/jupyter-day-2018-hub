@@ -15,6 +15,7 @@ auth:
       - minrk
 
 singleuser:
+  cmd: jupyter-labhub
   cpu:
     limit: 1
     guarantee: 0.1
